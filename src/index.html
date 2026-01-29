@@ -1,0 +1,338 @@
+<!doctype html>
+<html class="h-full"> 
+    <!-- found this so that the html and body take full height -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-black"> 
+<!-- <body class="bg-gradient-to-br from-neutral-950 via-zinc-900 to-neutral-800">  -->
+    <!-- found this color premium looking so i used it but it was causing problems so i removed it -->
+  <header>
+    <nav class="relative z-50 flex items-center justify-between px-4 sm:px-6 py-4">
+  <div class="flex items-center">
+    <img src="../media/axeno.png" alt="Logo" class="h-10 w-auto">
+  </div>
+ <!-- For the hamburger menu i took reference from the internet -->
+
+
+  <!-- Mobile-->
+  <details class="sm:hidden relative z-50">
+    <summary class="list-none cursor-pointer">
+      <img src="../media/hamburger-menu-svgrepo-com.svg" alt="Menu" class="h-8 w-8">
+    </summary>
+
+    <ul class="fixed top-16 right-4 z-50 w-64 bg-black p-4 rounded-lg space-y-3 text-right shadow-lg">
+      <li><a href="#" class="block text-white font-semibold ">Cash</a></li>
+      <li><a href="#" class="block text-white font-semibold">Invest</a></li>
+      <li><a href="#" class="block text-white font-semibold">Borrow</a></li>
+      <li><a href="#" class="block text-white font-semibold">Learn</a></li>
+
+      <li class="pt-2">
+        <a href="#" class="inline-block px-4 py-2 rounded border border-white text-white">Login</a>
+      </li>
+
+      <li>
+        <a href="#"class="inline-block px-4 py-2 rounded border border-white text-red-400 font-bold">Get Started</a>
+      </li>
+    </ul>
+  </details>
+
+    <!-- Desktop -->
+  <ul class="hidden sm:flex gap-8 text-white font-semibold text-lg">
+    <li><a href="#">Cash</a></li>
+    <li><a href="#">Invest</a></li>
+    <li><a href="#">Borrow</a></li>
+    <li><a href="#">Learn</a></li>
+  </ul>
+
+  <div class="hidden sm:flex items-center gap-4">
+    <button
+      class="px-4 py-2 rounded-lg border border-white text-white font-medium text-lg  hover:from-orange-500 hover:to-indigo-500"
+    >
+      Login
+    </button>
+    <button
+      class="px-4 py-2 rounded-lg border border-white text-white font-bold text-lg hover:bg-linear-to-t hover:from-orange-500 hover:to-indigo-500"
+    >
+      Get Started
+      </button>
+    </div>
+</nav>
+
+  </header>
+  <main class="px-4 sm:px-6">
+    <section class="flex items-center px-4 sm:px-6 py-12 min-h-screen">
+      <div class="flex flex-col md:flex-row items-center w-full h-full mr-auto gap-8">
+        <div class="container__left w-full md:w-1/2">
+          <h1 class="text-3xl md:text-4xl font-bold text-white mb-6">New Welcome offer</h1>
+          <p class="text-red-400 text-5xl sm:text-6xl md:text-9xl mb-6 font-bold">3.90% APY</p>
+          <p class="text-white text-sm sm:text-base md:text-lg mt-4 max-w-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, vel, nemo quas error dolor rem officiis porro similique quibusdam quasi, maiores excepturi corrupti magni enim laborum magnam suscipit impedit quaerat!</p>
+          <div class="mt-6 flex gap-4">
+            <button class="px-4 py-2 rounded-lg border border-white text-red-400 font-bold  hover:bg-yellow-400">Get Started</button>
+            <button class="px-4 py-2 rounded-lg border border-white text-white font-bold  hover:bg-yellow-400">Read More</button> 
+          </div>
+          <p class="text-sm text-white text-justify py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nostrum.</p>
+        </div>
+        <div class="container__right w-full md:w-1/2 flex justify-center md:justify-end">
+          <img class="w-40 sm:w-45 md:w-80 h-auto" src="../media/photo-camera-svgrepo-com.svg" alt="hero image">
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio__section px-4 sm:px-6 py-6 min-h-screen">
+        <h2 class="text-white text-center text-2xl md:text-4xl mb-12">Start Investing with a portfolio built for you, or on you build yourself</h2>
+        <div class="portfolio__section--wrapper px-6 py-6 flex flex-col md:flex-row items-center gap-8 mt-6 border border-gray-700 rounded-lg">
+            <div class="portfolio__section--left text-base md:text-xl max-w-xl w-full md:w-1/2">
+                <h3 class="text-red-400 text-xl md:text-3xl mt-6">Globally diversified index investing, managed for you</h3>
+                <p class="text-white mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo repellendus, voluptate dolores culpa provident maxime praesentium quia saepe est, quidem temporibus id quod a blanditiis.</p>
+                <ul class="list-none text-white mt-3 space-y-2">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </ul>
+                <div class="button__container flex gap-4 mt-4">
+                    <button class="px-4 py-2 rounded-lg border border-white text-red-400 font-bold hover:bg-yellow-400">Get Started</button>
+                <button class="px-4 py-2 rounded-lg border border-white text-white font-bold hover:bg-yellow-400">Learn More</button>
+                </div>
+            </div>
+            <div class="portfolio__section--right w-full md:w-1/2 flex justify-center md:justify-end">
+                <img src="../media/value-svgrepo-com.svg" class="w-48 md:w-80 h-auto" alt="portfolio image"> 
+                <!-- i used random images from svgrepo -->
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio__section px-4 sm:px-6 py-6 min-h-screen">
+        
+        <div class="portfolio__section--wrapper px-6 py-6 flex flex-col md:flex-row items-center gap-8 mt-6 border border-gray-700 rounded-lg">
+            <div class="portfolio__section--left text-base md:text-xl max-w-xl w-full md:w-1/2">
+                <p class="text-white mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo repellendus, voluptate dolores culpa provident maxime praesentium quia saepe est, quidem temporibus id quod a blanditiis.</p>
+                <ul class="list-none text-white mt-3 space-y-2">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </ul>
+                <div class="button__container flex gap-4 mt-4">
+                    <button class="px-4 py-2 rounded-lg border border-white text-pink-400 font-bold hover:bg-yellow-400">Get Started</button>
+                    <button class="px-4 py-2 rounded-lg border border-white text-white font-bold hover:bg-yellow-400">Learn More</button>
+                </div>
+            </div>
+            <div class="portfolio__section--right w-full md:w-1/2 flex justify-center md:justify-end">
+                <img src="../media/information-svgrepo-com.svg" class="w-48 md:w-80 h-auto" alt="portfolio image"> 
+                <!-- i used random images from svgrepo -->
+            </div>
+        </div>
+    </section>
+
+<section class="investment__container min-h-screen flex flex-col justify-center px-6">
+  <h2 class="text-red-400 text-center text-2xl md:text-4xl mb-16 font-bold">
+    Investing built your way
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+
+    <div class="investment__container--flex_left bg-stone-50 rounded-2xl border border-gray-300 w-full overflow-hidden">
+
+      <h3 class="bg-white px-6 py-5 text-xl font-bold text-red-400 border-b border-gray-300">
+        Let us build and manage your portfolio
+      </h3>
+
+      
+      <div class="px-6 py-6 space-y-8 text-gray-800">
+
+        <div class="investment__container--flex_left1">
+          <h4 class="font-bold text-red-400 mb-1 link-underline-animation ">
+            Automated Investing Account
+          </h4>
+          <p class="text-sm text-gray-700">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, deleniti!
+          </p>
+        </div>
+
+        <div class="investment__container--flex_left2">
+          <h4 class="font-bold text-red-400 mb-1 link-underline-animation">
+            Retirement Accounts
+          </h4>
+          <p class="text-sm text-gray-700">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, nobis.
+          </p>
+        </div>
+
+        <div class="investment__container--flex_left3">
+          <h4 class="font-bold text-red-400 mb-1 link-underline-animation">
+            529 Education Savings Plan
+          </h4>
+          <p class="text-sm text-gray-700">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, officiis?
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="investment__container--flex_right bg-stone-50 rounded-2xl border border-gray-300 w-full overflow-hidden">
+      <h3 class="bg-white px-6 py-5 text-xl font-bold text-red-400 border-b border-gray-300">
+        Build your own portfolio
+      </h3>
+
+      
+      <div class="px-6 py-6 space-y-8 text-gray-800">
+
+        <div>
+          <h4 class="font-bold text-red-400 mb-1 link-underline-animation">
+            Stock Investing Account
+          </h4>
+          <p class="text-sm text-gray-700">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, odit.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-red-400 mb-1 link-underline-animation">
+            S&P 500 Direct
+          </h4>
+          <p class="text-sm text-gray-700">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, nisi.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-red-400 mb-1 link-underline-animation">
+            Nasdaq-100 Direct
+          </h4>
+          <p class="text-sm text-gray-700">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, perferendis.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-red-400 mb-1 link-underline-animation">
+            Automated Bond Portfolio
+          </h4>
+          <p class="text-sm text-gray-700">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, nobis?
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="questions">
+  <div class="questions__container flex flex-col md:flex-row p-6 min-h-screen gap-8">
+    <div class="questions__container--left w-full md:w-1/2 flex items-center">
+      <h2 class="font-bold text-red-400 text-3xl md:text-6xl">Questions? 5 things to know in 5 minutes or less.</h2>
+    </div>
+    <div class="questions__container--right w-full md:w-1/2 flex items-center p-6">
+      <div class="w-full max-w-2xl mx-auto  divide-red-400">
+
+  <details class="group py-6">
+    <summary
+      class="flex justify-between items-center cursor-pointer list-none text-xl font-semibold text-red-400">
+      <span>
+        Are there any restrictions around the 3.25% APY? Is this a promotional rate?
+      </span>
+
+      <img src="../media/down-arrow-svgrepo-com.svg" class="w-6 h-6 transition-transform duration-300 group-open:rotate-180"
+      alt="arrow">
+
+      <!-- used transition-transform to rotate the arrow 180deg -->
+    </summary>
+
+    <div class="mt-4 text-white">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, a?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate placeat ipsam omnis soluta molestias a.
+      </p>
+    </div>
+  </details>
+
+  <details class="group py-6">
+    <summary
+      class="flex justify-between items-center cursor-pointer list-none text-xl font-semibold text-red-400">
+      <span>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis accusamus minima qui.
+      </span>
+
+      <img src="../media/down-arrow-svgrepo-com.svg" class="w-6 h-6 transition-transform duration-300 group-open:rotate-180"
+      alt="arrow">
+    </summary>
+
+    <div class="mt-4 text-white">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, minima?
+      </p>
+    </div>
+  </details>
+
+</div>
+
+    </div>
+  </div>
+</section>
+  </main>
+
+<footer class="bg-black border-t border-gray-700 text-white px-6 py-20">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+    
+    <div>
+      <h4 class="font-bold mb-4">Investing</h4>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li>Automated Investing</li>
+        <li>Stock Investing</li>
+        <li>Explore all investments</li>
+      </ul>
+    </div>
+
+  
+    <div>
+      <h4 class="font-bold mb-4">Save</h4>
+      <ul class="space-y-2 text-sm text-gray-300 mb-6">
+        <li>Cash</li>
+        <li>ATM Locator</li>
+      </ul>
+
+      <h4 class="font-bold mb-4">Bonds</h4>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li>Automated Bond Ladder</li>
+        <li>Automated Bond Portfolio</li>
+      </ul>
+    </div>
+
+
+    <div>
+      <h4 class="font-bold mb-4">Learn</h4>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li>Blog</li>
+        <li>Help Center</li>
+        <li>Joint Accounts</li>
+        <li>What level of risk suits you best?</li>
+        <li>IRA Contributions Calculator</li>
+      </ul>
+    </div>
+
+    <!-- COLUMN 4 -->
+    <div>
+      <h4 class="font-bold mb-4">About</h4>
+      <ul class="space-y-2 text-sm text-gray-300">
+        <li>Newsroom</li>
+        <li>Reviews</li>
+        <li>Careers</li>
+        <li>Legal</li>
+        <li>Security</li>
+        <li>Sitemap</li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
